@@ -315,7 +315,7 @@
     }, this);
 
     // ensure only 1 option is selected if multiple are set in the data source
-    if (this.options.source.data && !this.multiple && selectedOptions.length > 1) {
+    if (!this.multiple && selectedOptions.length > 1) {
       for (var i = 0; i < selectedOptions.length - 1; i++) {
         selectedOptions[i].selected = false;
       }
